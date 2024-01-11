@@ -1,0 +1,10 @@
+.table-footer-cell {
+    background-color: var(--grey-color);
+    padding: 15px 17px 15px 0;
+    line-height: 15px;
+}
+
+.tfoot-select {
+    border: none;
+    background-color: var(--grey-color);
+}

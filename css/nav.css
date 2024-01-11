@@ -1,0 +1,122 @@
+.container-block {
+    box-shadow: 0px 0px 5px 0px #00000033;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.block-navigation {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #fff;
+}
+
+.block-cms {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #C6C2DE;
+    padding: 79px 20px 0 20px;
+    margin-bottom: 20px;
+}
+
+
+.block-cms__title {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.block-cms__par {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--main-color);
+    align-self: flex-end;
+    margin-bottom: 10px;
+}
+
+.block-cms__par-color {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #6D5BD0;
+}
+
+.block-navigation {
+    padding: 15px 20px;
+}
+
+.navigation__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-filter {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    border: 1px solid #C6C2DE;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.btn-filter:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background-image: url(/image/filter.svg);
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.form-btn-surch {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.search-input {
+    width: 392px;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+}
+
+.search-input::placeholder {
+    line-height: 16px;
+    font-weight: 400;
+    padding-left: 50px;
+    color: var(--main-color);
+}
+
+.search-button {
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    background-image: url(/image/search.svg);
+    background-repeat: no-repeat;
+    border: 0;
+    background-position: center;
+    padding-left: 10px;
+}
+
+.button-add-goods-nav-list {
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    background-color: #6D5BD0;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 6px;
+    
+}
+
+.navigation__list-bnn-add-goods {
+    align-self: flex-end;
+}

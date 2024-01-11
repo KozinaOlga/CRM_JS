@@ -1,0 +1,45 @@
+.block-table {
+    overflow-x: auto;
+    min-width: auto;
+    background-color: #fff;
+
+}
+
+.table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.table__head-cell,
+.table__head-empty {
+    border-top: 1px solid #D9D5EC;
+    border-bottom: 1px solid #D9D5EC;
+    line-height: 15px;
+    color: var(--main-color);
+    text-transform: uppercase;
+    background-color: var(--grey-color);
+    padding: 15px;
+}
+
+td {
+    border-bottom: 1px solid #D9D5EC;
+    padding: 0;
+}
+
+.table__body-cell {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    color: #25213B;
+    padding: 21px 20px 22px 15px;
+}
+
+.table__body-button {
+    width: 20px;
+    height: 20px;
+}
+
+.table__body-del {
+    width: 20px;
+    height: 20px;
+}
