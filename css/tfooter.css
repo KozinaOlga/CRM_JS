@@ -7,4 +7,5 @@
 .tfoot-select {
     border: none;
     background-color: var(--grey-color);
+    outline: none;
 }
