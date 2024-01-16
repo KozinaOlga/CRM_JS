@@ -12,82 +12,85 @@
 
     <div class="overlay">
         <div class="container">
+            <div class="modal">
+                <form action="https://jsonplaceholder.typicode.com/posts" class="form"
+                method="POST">
+                <div class="button">
+                    <button class="btn" type="submit" formaction="https://jsonplaceholder.typicode.com/posts"></button>
+                </div>
+    
+                <div class="block">
+                    <div class="block-title">
+                        <h1 class="block-title__header">Добавить товар</h1>
+                        <button class="block-title__btn">ID:201910241
+                            <img src="/image/akar-icons_edit.svg" alt="кнопка">
+                        </button>
+                    </div>
+    
+                    <fieldset class="fieldset-form">
+                        <div class="block-modal">
+                            <div class="block-label">
+                                <label for="title" class="lable-title label-text">Наименование
+                                    <input type="text" name="title" id="title" required>
+                                </label>
+            
+                                <label for="category" class="lable-category label-text">Категория
+                                    <input type="text" name="category" id="category" required>
+                                </label>
+            
+                                <label for="units" class="lable-units label-text">Единицы измерения
+                                    <input type="text" name="units" id="units" required>
+                                </label>
+            
+                                <label for="sale" class="lable-checkbox label-text">Дисконт
+                                    <input type="checkbox" name="sale" id="sale" value="sale" class="checkbox">
+                                </label>
+            
+                                <label for="sale-checkbox" class="lable-discount label-text">
+                                    <input type="text" name="sale-checkbox" required class="input-sale-checkbox" id="sale-checkbox">
+                                </label>
+            
+                                <label for="description" class="lable-description label-text">Описание
+                                    <textarea name="text" id="description" cols="30" rows="8" class="description-text" spellcheck="true"></textarea>
+                                </label>
+            
+                                <label for="numbers" class="label-numbers label-text">Количество
+                                    <input type="number" name="numbers" required id="numbers">
+                                </label>
+            
+                                <label for="price" class="label-price label-text">Цена
+                                    <input type="number" name="price" required id="price">
+                                </label>
+                            </div>
+        
+                            <div class="add-image">
+                                <label for="add-file" class="label-input-add-file">Добавить изображеие
+                                    <input type="file" name="file" accept="image/*" class="file-input" multiple id="add-file">
+                                </label>
+                            </div>
+                        </div>
 
-            <form action="https://jsonplaceholder.typicode.com/posts" class="form"
-            method="POST">
-            <div class="button">
-                <button class="btn" type="submit" formaction="https://jsonplaceholder.typicode.com/posts"></button>
+    
+                    </fieldset>
+    
+                    <div class="block-total">
+                        <div class="block-text">
+                            <p class="block-text__par">Итогова стоимость:</p>
+                            <p class="block-text__price">$ 900.00</p>
+                        </div>
+                        
+                        <div class="button-goods">
+                            <button type="submit" class="button-add-goods">Добавить товар</button>
+                        </div>
+                    </div>
+                </div>
+                </form>
+    
             </div>
 
-            <div class="block">
-                <div class="block-title">
-                    <h1 class="block-title__header">Добавить товар</h1>
-                    <button class="block-title__btn">ID:201910241
-                        <img src="/image/akar-icons_edit.svg" alt="кнопка">
-                    </button>
-                </div>
-
-                <fieldset class="fieldset-form">
-                    <div class="block-label">
-                        <label for="title" class="lable-title label-text">Наименование
-                            <input type="text" name="title" id="title" required>
-                        </label>
-    
-                        <label for="category" class="lable-category label-text">Категория
-                            <input type="text" name="category" id="category" required>
-                        </label>
-    
-                        <label for="units" class="lable-units label-text">Единицы измерения
-                            <input type="text" name="units" id="units" required>
-                        </label>
-    
-                        <label for="sale" class="lable-checkbox label-text">Дисконт
-                            <input type="checkbox" name="sale" id="sale" value="sale" class="checkbox">
-                        </label>
-    
-                        <label for="sale-checkbox" class="lable-discount label-text">
-                            <input type="text" name="sale-checbox" required class="input-sale-checkbox" id="sale-checkbox">
-                        </label>
-    
-                        <label for="description" class="lable-description label-text">Описание
-                            <textarea name="text" id="description" cols="30" rows="8" class="description-text" spellcheck="true">
-                            </textarea>
-                        </label>
-    
-                        <label for="numbers" class="label-numbers label-text">Количество
-                            <input type="number" name="numbers" required id="numbers">
-                        </label>
-    
-                        <label for="price" class="label-price label-text">Цена
-                            <input type="number" name="price" required id="price">
-                        </label>
-                    </div>
-
-                    <div class="add-image">
-                        <label for="add-file" class="label-input-add-file">Добавить изображеие
-                            <input type="file" name="file" accept="image/*" class="file-input" multiple id="add-file">
-                        </label>
-
-                    </div>
-
-                </fieldset>
-
-                <div class="block-total">
-                    <div class="block-text">
-                        <p class="block-text__par">Итогова стоимость:</p>
-                        <p class="block-text__price">$ 900.00</p>
-                    </div>
-                    
-                    <div class="button-goods">
-                        <button type="submit" class="button-add-goods">Добавить товар</button>
-                    </div>
-                </div>
-            </div>
-            </form>
         </div>
     </div>
 
-    <main class="main">
         <div class="container-table">
             <div class="block-cms">
                 <h1 class="block-cms__title">CMS</h1>
@@ -517,7 +520,6 @@
                 </div>
             </div>
         </div>
-    </main>
 
     
     <script>
