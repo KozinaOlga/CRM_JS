@@ -1,20 +1,24 @@
 'use strict';
-const nameOfProdact = 'Утюг Atlanta ATH-5537 фиолетовый';
-const quantityOfProdact = 20;
-const prodactOfCategory = 'Техника для дома';
-const priceOfProdact = 750;
+// const nameOfProdact = 'Утюг Atlanta ATH-5537 фиолетовый';
+// const quantityOfProdact = 20;
+// const prodactOfCategory = 'Техника для дома';
+// const priceOfProdact = 750;
 
-console.log(nameOfProdact);
+// console.log(nameOfProdact);
 
-const total = quantityOfProdact * priceOfProdact;
+let quantityOfGoods = 20;
+let priceOfGoods = 750;
+
+
+const total = quantityOfGoods * priceOfGoods;
 console.log(total);
 
-const user = prompt('Какое наименование товара вам нужно?', `${nameOfProdact}`);
-const quantityOfGoods = Number(prompt('Какое количество товара у вас есть?', '20'));
-console.log(typeof quantityOfGoods);
+const nameOfProdact = prompt('Какое наименование товара вам нужно?', 'Утюг Atlanta ATH-5537 фиолетовый');
+const quantityOfProdact = Number(prompt('Какое количество товара у вас есть?', '20'));
+console.log(typeof quantityOfProdact);
 
-const categoryOfGoods = prompt ('Какая категория данного товара? ', `${prodactOfCategory}`);
-const priceOfGoods = Number(prompt('Какая цена товара ', `${total} деревянных`));
+const prodactOfCategory = prompt ('Какая категория данного товара? ', 'Техника для дома');
+const priceOfProdact = Number(prompt('Какая цена товара ', `${total} деревянных`));
 console.log(typeof priceOfGoods);
 
 const totalText = `На складе ${quantityOfProdact} единиц товара `;
