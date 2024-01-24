@@ -24,9 +24,8 @@ let russian = 78;
 let informatics = 95;
 const sum = math + russian + informatics;
 console.log('sum: ', sum);
-const student = prompt('Какоя общий результат по экзамену?');
 
-один вариант
+//один вариант
 const student = prompt('Какоя общий результат по экзамену?');
 if (student >=265) {
     alert('Поздравляю, вы поступили на бюджет!');
@@ -43,7 +42,7 @@ const user = sum >=265 ? alert('Поздравляю, вы поступили н
 //Четвертая задача 
 
 let atm = 520;
-const user = prompt('Какую суммы вы хотите снять?');
+const users = prompt('Какую суммы вы хотите снять?');
 
 if (atm % 100 === 0) {
     console.log('Банкомат выдаст деньги');
