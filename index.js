@@ -38,7 +38,7 @@ console.log(newTotalText);
 
 
 //Первая задача
-
+/*
 const quantityOfProdact = 'Какое количество товара у вас есть?';
 
 const resultQuantity = Number(prompt(`${quantityOfProdact}`, 'Введите нужное количество товара'));
@@ -60,7 +60,7 @@ if (Number.isNaN(resultPrice)) {
 } else {
     alert('Верная цена!');
 }
-
+*/
 
 
 

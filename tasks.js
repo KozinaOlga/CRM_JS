@@ -1,7 +1,7 @@
 'use strict';
 
 //Вторая задача
-
+/*
 const rain = Math.random();
 console.log(Math.round(rain));
 
@@ -49,7 +49,7 @@ if (atm % 100 === 0) {
 } else {
     console.log('денег нет');
 }
-
+*/
 
 
 
