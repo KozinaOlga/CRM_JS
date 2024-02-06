@@ -16,29 +16,30 @@ const calculate = (totalGoods, quantityItems, promotionalCode) => {
         console.log(discount);
         amoutGoods -= discount;
         console.log(amoutGoods);
-    }
-
+    } 
+    
     if (amoutGoods > 30000) {
         discount = (amoutGoods - 30000) * countFifteenPercent;
         amoutGoods -= discount;
-        console.log(amoutGoods);
+        console.log(discount);
     }
-
+    
     if (promotionalCode === 'MEHTED') {
         discount = amoutGoods * countTenPercent;
         amoutGoods -= discount;
         console.log(amoutGoods);
     }
-
-    if (promotionalCode === 'G3H2Z1' && (amoutGoods - discount) > 2000) {
+    
+    if (promotionalCode === 'G3H2Z1' && (discount = ((amoutGoods * countThreePercent) + ((amoutGoods - 30000) * countFifteenPercent) > 2000))) {
         discount = amoutGoods - 500;
+        console.log(discount);
         console.log(amoutGoods);
-    }
+    } 
 
     return totalGoods;
 }
 
-const res = calculate(20000, 16, 'G3H2Z1');
+const res = calculate(70000, 16, 'G3H2Z1');
 
 console.log(res);
 
