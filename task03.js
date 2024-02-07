@@ -18,7 +18,6 @@ const calculate = (totalGoods, quantityItems, promotionalCode) => {
         //console.log(discount);
         amoutGoods -= discount; //общая сумма корзины за минусом скидки
         //console.log(amoutGoods);
-    
     } 
     
     if (amoutGoods > 30000) {
@@ -33,7 +32,7 @@ const calculate = (totalGoods, quantityItems, promotionalCode) => {
         //console.log(amoutGoods);
     } 
     
-    if (promotionalCode === 'G3H2Z1' && (discount = ((amoutGoods * countThreePercent) + ((amoutGoods - 30000) * countFifteenPercent) > 2000))) {
+    else if (promotionalCode === 'G3H2Z1' && (discount = ((amoutGoods * countThreePercent) + ((amoutGoods - 30000) * countFifteenPercent) > 2000))) {
         amoutGoods -= 500;
         //console.log(discount);
         //console.log(amoutGoods);
