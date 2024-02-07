@@ -9,31 +9,40 @@ const countFifteenPercent = 0.15; // скидка 15%
 const countTenPercent = 0.1; // скидка 10%
 
 
+
 const calculate = (totalGoods, quantityItems, promotionalCode) => {
     let amoutGoods = totalGoods;
     if (quantityItems > 10) {
-        discount = amoutGoods * countThreePercent; //скидка на товар 3%
-        console.log(discount);
-        amoutGoods -= discount;
-        console.log(amoutGoods);
-    } else if (amoutGoods > 30000) {
-        discount = (amoutGoods - 30000) * countFifteenPercent;
-        amoutGoods -= discount;
-        console.log(discount);
-    } else if (promotionalCode === 'MEHTED') {
-        discount = amoutGoods * countTenPercent;
-        amoutGoods -= discount;
-        console.log(amoutGoods);
-    } else if (promotionalCode === 'G3H2Z1' && (discount = ((amoutGoods * countThreePercent) + ((amoutGoods - 30000) * countFifteenPercent) > 2000))) {
-        amoutGoods -= 500;
-        console.log(discount);
-        console.log(amoutGoods);
+        discount = amoutGoods * countThreePercent;
+        //скидка на товар 3%
+        //console.log(discount);
+        amoutGoods -= discount; //общая сумма корзины за минусом скидки
+        //console.log(amoutGoods);
+    
     } 
-
-    return totalGoods;
+    
+    if (amoutGoods > 30000) {
+        discount = (amoutGoods - 30000) * countFifteenPercent; //скидка 15%
+        amoutGoods -= discount;
+        //console.log(discount);
+    } 
+    
+    if (promotionalCode === 'MEHTED') {
+        discount = amoutGoods * countTenPercent; //скидка в 10%
+        amoutGoods -= discount;
+        //console.log(amoutGoods);
+    } 
+    
+    if (promotionalCode === 'G3H2Z1' && (discount = ((amoutGoods * countThreePercent) + ((amoutGoods - 30000) * countFifteenPercent) > 2000))) {
+        amoutGoods -= 500;
+        //console.log(discount);
+        //console.log(amoutGoods);
+    } 
+    
+    return amoutGoods;
 }
 
-const res = calculate(70000, 16, 'G3H2Z1');
+const res = calculate(40000, 11, 'G3H2Z1');
 
 console.log(res);
 
